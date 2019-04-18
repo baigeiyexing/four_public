@@ -54,7 +54,6 @@
 export default {
   name: 'personal',
   components: {
-    // HelloWorld
   }
 }
 
