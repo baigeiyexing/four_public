@@ -3,7 +3,7 @@
     <h1>用户中心</h1>
     <div class="container">
         <div class="wish-wrap">
-            <img src="/images/wish/wish.jpg">
+            <img src="../assets/wish.jpg">
             <router-link to="./getwishlist">
                 <span class="text">我的心愿清单 &gt;</span>
             </router-link> 
