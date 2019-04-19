@@ -1,13 +1,6 @@
 <template>
     <div id="app">
         <VueX-Header></VueX-Header><!-- ← 引入的头部导航-->
-<<<<<<< HEAD
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
-        <router-link to="/personal">Personal</router-link>|
-        <router-link to="/furniture">Furniture</router-link>
-=======
->>>>>>> dced649d138a8e0a73cb27b6d92ed57d0d7efcb0
         <router-view></router-view>
         <VueX-Footer></VueX-Footer><!-- ← 引入的尾部导航-->
     </div>
