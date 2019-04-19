@@ -16,8 +16,7 @@
                     <li><router-link to="/afflatus">灵感</router-link></li>
                 </ul>
                 <span class="head_nav_button">
-
-                    <input type="text" value="请输入需要查询的内容"><span class="iconfont icon-fangdajing"></span>
+                    <span class="head_input_box"><input class="head_input" type="text" value="请输入需要查询的内容"><span class="iconfont icon-fangdajing"></span></span>
                     <span><router-link to="/shoppingCart"><span class="iconfont icon-gouwuchekong"></span></router-link></span>
                     <span><router-link to="/about"><span class="iconfont icon-dingdan"></span></router-link></span>
                     <span ><router-link to="/personal"><span class="iconfont icon-denglu"></span></router-link></span>
@@ -43,9 +42,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    a{color:#000;}
+
+    a{color:#A9A9A9;}
     a:link{color:#000000}
-    a:hover{color:#eeeeee}
+    a:hover{color:#000}
     a{text-decoration:none;}
     .clear:after{
         content: "";
@@ -57,8 +57,8 @@
 
     .header_title{
         width: 100%;
-        background-color: #fffac9;
-        height: 30px;
+        background-color: #F6F6F6;
+        height: 28px;
         overflow: hidden;
     }
     .head_text_box{
@@ -102,7 +102,7 @@
 
     }
     .head_nav_box{
-        background-color: #d9d9d9;
+        background-color: #fff;
         width: 100%;
 
     }
@@ -114,13 +114,28 @@
     .head_nav_button span{
         margin-left: 10px;
     }
+    .head_nav_button span:hover{
+        color: #000;
+    }
     .head_nav_button span :nth-child(2){
         margin-left: 0px;
     }
 
     .head_nav_button input{
-        width: 80px;
+        width: 150px;
+        font-size: 12px;
     }
-
+    .head_input{
+       display: none;
+        border-radius: 40px;
+        -webkit-box-shadow: 0 0 0 1000px white  inset !important;
+        padding-left: 5px;
+        border: 1px solid #DBDBDB;
+        margin-right: 5px;
+        outline:none
+    }
+    .head_input_box:hover .head_input{
+        display:inline-block;
+    }
 
 </style>

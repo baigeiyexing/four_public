@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 楷体;
+    color: #A9A9A9;
 }
 .clear::before,
 .clear::after{

@@ -1,39 +1,24 @@
 <template>
-    <el-carousel :interval="5000" arrow="always">
-        <el-carousel-item v-for="item in 4" :key="item">
-            <h3>{{ item }}</h3>
-        </el-carousel-item>
-    </el-carousel>
+<vueX_lunbo></vueX_lunbo>
+<vueX_body></vueX_body>
 </template>
 
-<style>
-    .el-carousel__item h3 {
-        color: #475669;
-        font-size: 18px;
-        opacity: 0.75;
-        line-height: 300px;
-        margin: 0;
-    }
 
-    .el-carousel__item:nth-child(2n) {
-        background-color: #99a9bf;
-    }
-
-    .el-carousel__item:nth-child(2n+1) {
-        background-color: #d3dce6;
-    }
-</style>
 
 <script>
-    // @ is an alias to /src
-    // import HelloWorld from '@/components/HelloWorld.vue'
-    // import
+// ↓ --------- 引入home轮播组件 ----------
+    import Home_lunbo from '../../components/home/Home_lubo'
+    import Home_body from '../../components/home/Home_body'
     export default {
         name: 'home',
+        // data(){
+        //     return {
+        //      留着写代码的位置
+        // },
         components: {
-            // HelloWorld,
-            // Header,
-            // footer
+            // ↓ 注册主页轮播组件
+            vueX_lunbo:Home_lunbo,
+            vueX_body:Home_body
         }
     }
 </script>
