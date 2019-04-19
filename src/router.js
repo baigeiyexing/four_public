@@ -25,6 +25,11 @@ export default new Router({
       path: '/personal',
       name: 'personal',
       component: () => import('./views/Personal.vue')
+    },
+    {
+      path: '/furniture',
+      name: 'furniture',
+      component: () => import('./views/zgq/Furniture.vue')
     }
   ]
 })
