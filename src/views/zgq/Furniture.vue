@@ -23,65 +23,17 @@
       </ul>
     </nav>
     <!-- 标题 -->
-    <div class="f-category">
-      <div class="furniture-title">
-        <!-- 图标 -->
-        <div class="furniture-icon">
-          <i class="f-icon-kitchen f-icon">
-            <img src alt>
-          </i>
-        </div>
-        <div class="title f-font-t"></div>
-      </div>
-      <div class="furniture-cell clear">
-        <!-- <div class="left_box">
-                <a href="" class="left-image-cell">
-                    <img src="" alt="">
-                    <div class="f-cell-overlay">
-                        <div class="title">茶碗 灰色</div>
-                        <div class="price">￥168.00</div>
-                    </div>
-                </a>
-            </div>
-            <div class="right_box">
-                <a href="" class="right-image-cell">
-                    <img src="" alt="">
-                    <div class="f-cell-overlay">
-                        <div class="title">茶碗 灰色</div>
-                        <div class="price">￥168.00</div>
-                    </div>
-                </a>
-                <a href="" class="right-image-cell">
-                    <img src="" alt="">
-                    <div class="f-cell-overlay">
-                        <div class="title">茶碗 灰色</div>
-                        <div class="price">￥168.00</div>
-                    </div>
-                </a>
-                <a href="" class="right-image-cell">
-                    <img src="" alt="">
-                    <div class="f-cell-overlay">
-                        <div class="title">茶碗 灰色</div>
-                        <div class="price">￥168.00</div>
-                    </div>
-                </a>
-                <a href="" class="right-image-cell">
-                    <img src="" alt="">
-                    <div class="f-cell-overlay">
-                        <div class="title">茶碗 灰色</div>
-                        <div class="price">￥168.00</div>
-                    </div>
-                </a>
-        </div>-->
-      </div>
-    </div>
+<furniture-header-icon></furniture-header-icon>
     <!-- 分页 -->
     <div class="pagning clear"></div>
   </section>
 </template>
 
 <script>
-export default {};
+import furnitureHeaderIcon from "@/components/furniture/furniture-header-icon.vue"
+export default {
+
+};
 </script>
 <style scoped>
 /* 二级导航 */
