@@ -3,7 +3,7 @@
     <h1>用户中心</h1>
     <div class="container">
         <div class="wish-wrap">
-            <img src="../assets/wish.jpg">
+            <img src="../assets/img/wish.jpg">
             <router-link to="./getwishlist">
                 <span class="text">我的心愿清单 &gt;</span>
             </router-link> 
@@ -26,10 +26,10 @@
                 </router-link>
             </li>
             <li class="li-item">
-                <router-link to="./getaddress">
+                <router-link to="/address">
                     <span class="text">我的地址</span>
                 </router-link>
-                <router-link to="./getaddress">
+                <router-link to="/address">
                     <p>管理您的订单地址 &gt;</p>
                 </router-link>
             </li>
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/personal.css";
+@import "../assets/css/personal.css";
 
 </style>
 
