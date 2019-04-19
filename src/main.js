@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import '@/assets/css/public.css'
 
 // ↓ ------ 引入 ElementUi 插件 -------
 // import ElementUI from 'element-ui'
