@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <div class="header-title">生长于野 <span class="separator">·</span> 安于室</div>
+        <div class="header-title">生长于 <span class="separator">·</span> 安于室</div>
             <div class="logo"></div>
             <nav>
                 <ul class="header-nav">
