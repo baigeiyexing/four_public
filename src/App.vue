@@ -3,7 +3,8 @@
         <VueX-Header></VueX-Header><!-- ← 引入的头部导航-->
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link> |
-        <router-link to="/personal">Personal</router-link>
+        <router-link to="/personal">Personal</router-link>|
+        <router-link to="/furniture">Furniture</router-link>
         <router-view></router-view>
         <VueX-Footer></VueX-Footer><!-- ← 引入的尾部导航-->
     </div>
