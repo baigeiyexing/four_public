@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <VueX-Header></VueX-Header><!-- ← 引入的头部导航-->
+        <vuex_Header></vuex_Header><!-- ← 引入的头部导航-->
         <router-view></router-view>
-        <VueX-Footer></VueX-Footer><!-- ← 引入的尾部导航-->
+        <vuex_Footer></vuex_Footer><!-- ← 引入的尾部导航-->
     </div>
 </template>
 <script>
@@ -17,8 +17,8 @@
     export default {
         name:"App",
         components:{ // 注册引入组件
-            "VueX-Header":Header,// ← 头部导航
-            "VueX-Footer":Footer // ← 尾部页面
+            vuex_Header:Header,// ← 头部导航
+            vuex_Footer:Footer // ← 尾部页面
         }
     }
 </script>

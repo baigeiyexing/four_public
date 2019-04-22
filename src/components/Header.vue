@@ -13,7 +13,8 @@
                     <li><router-link to="/furniture?1">家具</router-link></li>
                     <li><router-link to="/furnishing">家居</router-link></li>
                     <li><router-link to="/lifestyle">风格</router-link></li>
-                    <li><router-link to="/afflatus">灵感</router-link></li>
+                    <!-- aff_ajax_fu 是在点击事件发生时调用Oringinality组件中的 AJAX方法 并发送值为1-->
+                    <li v-on:click="ajax_post_page(1)"><router-link to="/afflatus">灵感</router-link></li>
                 </ul>
                 <span class="head_nav_button">
                     <span class="head_input_box"><input class="head_input" type="text" value="请输入需要查询的内容"><span class="iconfont icon-fangdajing"></span></span>
@@ -27,6 +28,9 @@
 </template>
 
 <script>
+    // ↓ ------- 引入点击导航使用灵感页面的ajax方法（用途将使用ajax） --------
+    import aff_ajax_fn from"../views/aff_originality/Oringinality"
+
     export default {
         name: 'VueX-Header',
         data(){
@@ -35,16 +39,30 @@
             }
         },
         props: {
-            msg: String
+            msg: String,
+        },
+        component:{
+            // ↓ -- Ajax-注册灵感页面 --
+            aff_ajax_fn
+        }
+        ,
+        methods:{
+            // ↓ Ajax-设置进入灵感页面 默认跳转到第一页
+           ajax_post_page:function (page_num) {
+               // 下使用引入页面的方法
+               aff_ajax_fn.methods.get_affData(page_num)
+
+           }
         }
     }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
     a{color:#A9A9A9;}
-    a:link{color:#000000}
+    /*a:link{color:#000000}*/
     a:hover{color:#000}
     a{text-decoration:none;}
     .clear:after{
@@ -137,5 +155,7 @@
     .head_input_box:hover .head_input{
         display:inline-block;
     }
-
+    .header{
+        border-bottom: #F6F6F6 2px solid;
+    }
 </style>
