@@ -1,50 +1,49 @@
 <template>
-  <section>
-    <h1>用户中心</h1>
-    <div class="container">
-        <div class="wish-wrap">
-            <img src="../../assets/img/wish.jpg">
-            <router-link to="./getwishlist">
-                <span class="text">我的心愿清单 &gt;</span>
-            </router-link> 
+    <section>
+        <h1>用户中心</h1>
+        <div class="container">
+            <div class="wish-wrap">
+                <img src="../../assets/img/wish.jpg">
+                <router-link to="/wishlist">
+                    <span class="text">我的心愿清单 &gt;</span>
+                </router-link> 
+            </div>
+            <ul class="row clear ">
+                <li class="li-item">
+                    <router-link to="./order">
+                        <span class="text">我的订单</span>
+                    </router-link>
+                    <router-link to="./order">
+                        <p>管理和编辑您的订单 &gt;</p>
+                    </router-link>
+                </li>
+                <li class="li-item">
+                    <router-link to="/personalmsg">
+                        <span class="text">个人中心</span>
+                    </router-link>
+                    <router-link to="/personalmsg">
+                        <p>管理您的个人信息 &gt;</p>
+                    </router-link>
+                </li>
+                <li class="li-item">
+                    <router-link to="/address">
+                        <span class="text">我的地址</span>
+                    </router-link>
+                    <router-link to="/address">
+                        <p>管理您的订单地址 &gt;</p>
+                    </router-link>
+                </li>
+                <li class="li-item">
+                    <router-link to="/coupon">
+                        <span class="text">我的优惠券</span>
+                    </router-link>
+                    <router-link to="/coupon">
+                        <p>管理您的优惠券 &gt;</p>
+                    </router-link>
+                </li>
+            </ul>
         </div>
-        <ul class="row clear ">
-            <li class="li-item">
-                <router-link to="./order">
-                    <span class="text">我的订单</span>
-                </router-link>
-                <router-link to="./order">
-                    <p>管理和编辑您的订单 &gt;</p>
-                </router-link>
-            </li>
-            <li class="li-item">
-                <router-link to="./getmessage">
-                    <span class="text">个人中心</span>
-                </router-link>
-                <router-link to="./getmessage">
-                    <p>管理您的个人信息 &gt;</p>
-                </router-link>
-            </li>
-            <li class="li-item">
-                <router-link to="/address">
-                    <span class="text">我的地址</span>
-                </router-link>
-                <router-link to="/address">
-                    <p>管理您的订单地址 &gt;</p>
-                </router-link>
-            </li>
-            <li class="li-item">
-                <router-link to="./getcoupon">
-                    <span class="text">我的优惠券</span>
-                </router-link>
-                <router-link to="./getcoupon">
-                    <p>管理您的优惠券 &gt;</p>
-                </router-link>
-            </li>
-        </ul>
-    </div>
-</section>
-
+    </section>
 </template>
 
 <script>
@@ -69,6 +68,7 @@ section{
 h1{
     width: 160px;
     margin: 10px auto 30px;
+    font-size: 36px;
 }
 .container{
     width: 100%;
@@ -104,8 +104,7 @@ h1{
 
 /* 子页面 */
 .row {
-    width: 100%;
-    margin: 0 auto;
+    margin: 0 25px;
     position: relative;
     background: #fff;
     text-align: center;
